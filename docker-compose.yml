@@ -10,12 +10,17 @@ services:
       TYPE: "PAPER"
       MEMORY: "2048M"
       MAX_PLAYERS: "5"
+      ONLINE_MODE: "false"
       TZ: "Asia/Jakarta"
       DIFFICULTY: "2"
       FORCE_GAMEMODE: "true"
       LEVEL: "MineRPL"
       OPS: |-
         hoshimurata
+      ENABLE_WHITELIST: "true"
+      WHITELIST: |-
+        hoshimurata
+        cyanstar
       PLAYER_IDLE_TIMEOUT: "10"
       ENABLE_ROLLING_LOGS: "true"
       LOG_TIMESTAMP: "true"
