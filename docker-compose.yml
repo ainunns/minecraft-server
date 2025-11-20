@@ -15,14 +15,9 @@ services:
       DIFFICULTY: "2"
       FORCE_GAMEMODE: "true"
       LEVEL: "MineRPL"
-      OPS: |-
-        hoshimurata
       ENABLE_WHITELIST: "true"
-      WHITELIST: |-
-        hoshimurata
-        cyanstar
       PLAYER_IDLE_TIMEOUT: "10"
       ENABLE_ROLLING_LOGS: "true"
       LOG_TIMESTAMP: "true"
     volumes:
-      - "./minecraft-data:/data"
+      - "./data:/data"
