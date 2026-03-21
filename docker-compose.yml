@@ -1,6 +1,7 @@
 services:
-  mc:
+  minecraft-server:
     image: itzg/minecraft-server:latest
+    container_name: minecraft-server
     tty: true
     stdin_open: true
     ports:
@@ -21,4 +22,11 @@ services:
       ENABLE_ROLLING_LOGS: "true"
       LOG_TIMESTAMP: "true"
     volumes:
-      - "./data:/data"
+      - "./minecraft-server:/data"
+    networks:
+      - proxy
+
+networks:
+  proxy:
+    name: proxy
+    external: true
